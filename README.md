@@ -26,4 +26,4 @@ This repository contains a code that enables the use of Coalition Structure Gene
 ```gradle eclipse```
 
 ## Related Projects
-This code has been used in a master degree project that aimed to evaluate coalition formation techniques in multi-agent systems. You can find the code [here](https://github.com/TabajaraKrausburg/CoalitionFormationForMAS) and the published results [here](http://www.scitepress.org/DigitalLibrary/Link.aspx?doi=10.5220/.0007374501620169).
+This code has been used in a master degree project that aimed to evaluate coalition formation techniques in multi-agent systems. You can find the code [here](https://github.com/TabajaraKrausburg/CoalitionFormationForMAS) and the published results [here](https://www.scitepress.org/PublicationsDetail.aspx?ID=QZ3QFqN8HfU=&t=1).
