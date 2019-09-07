@@ -1,0 +1,13 @@
+mas coalition4mas {
+
+    agent sample_agent: sample_agent.asl {
+		join: csws
+		goals: hello
+	}
+
+    workspace csws {
+		artifact cf: cfartefact.CFArtefact("","cfartefact.algorithms.clink.adapterClink")
+	}
+
+    asl-path: src/agt
+}

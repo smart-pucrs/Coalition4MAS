@@ -1,0 +1,36 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+repositories {
+	jcenter()
+    mavenCentral()
+
+    maven { url "http://jacamo.sourceforge.net/maven2" }
+    maven { url "https://jade.tilab.com/maven/"}
+
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+	implementation group: 'org.jacamo', 	    name: 'jacamo', version: '0.7'
+    implementation group: 'com.google.guava',   name: 'guava',  version: '22.0'
+
+	testCompile 'junit:junit:4.12'
+}
+
+task run (type: JavaExec, dependsOn: ['classes', 'test']) {
+    description 'runs the application'
+    group ' JaCaMo'
+    main = 'jacamo.infra.JaCaMoLauncher'
+    args 'coalition4mas.jcm'
+    classpath sourceSets.main.runtimeClasspath
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src/env'
+            srcDir 'src/agt'
+        }
+    }
+}
